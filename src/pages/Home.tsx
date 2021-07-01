@@ -37,20 +37,36 @@ export function Home() {
       return
     }
 
-    const taskSelected: Task = tasks[taskIndex]
-
-    console.log(tasks);
+    const taskSelected: Task ={
+      ...tasks[taskIndex]
+    }
+    
     tasks[taskIndex].done ? taskSelected.done = false : taskSelected.done = true;
 
     const newTasks = tasks.filter(task => task.id !== id);    
         
     setTasks([...newTasks, taskSelected])
-    console.log(tasks);
+
+    // Outra forma que poderia ter feito:
+    // Nessa forma a ordem das tarefas não são alteradas:
+    // setTasks(oldState => oldState.map(task => 
+    //   task.id === id ? {...task, done: !task.done} : task
+    // ))
+    // O trencho do if ternário é a mesma coisa que :
+    // if(task.id === id) {
+    //   return {
+    //     ...task,
+    //     done: !done
+    //   }
+    // }
+    
+    // return task
         
   }
 
   function handleRemoveTask(id: number) {
-    //TODO - remove task from state
+    const updatedTasks = tasks.filter(task => task.id !== id)
+    setTasks(updatedTasks);
   }
 
   return (

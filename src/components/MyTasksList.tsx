@@ -30,6 +30,7 @@ export function MyTasksList({ tasks, onLongPress, onPress }: MyTasksListProps) {
             testID={`button-${index}`}
             activeOpacity={0.7}
             onPress={() => onPress(item.id)}
+            onLongPress={() => onLongPress(item.id)}
             style={ item.done ? styles.taskButtonDone : styles.taskButton}
             >
             <View 
