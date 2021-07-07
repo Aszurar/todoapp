@@ -1,10 +1,16 @@
 import React from 'react';
 import { FlatList, TouchableOpacity, View, Text, StyleSheet, FlatListProps } from 'react-native';
 
-function FlatListHeaderComponent() {
+interface FlatListHeaderComponentProps {
+  nightModeState: boolean;
+}
+
+function FlatListHeaderComponent({ nightModeState }: FlatListHeaderComponentProps) {
   return (
     <View>
-      <Text style={styles.header}>Minhas tasks</Text>
+      <Text style={[styles.header, 
+      {color: nightModeState ? '#67E480':'#3D3D4D' }]}
+      >Minhas tasks</Text>
     </View>
   )
 }
@@ -17,43 +23,56 @@ interface MyTasksListProps {
   }[];
   onPress: (id: number) => void;
   onLongPress: (id: number) => void;
+  nightModeState: boolean;
 }
 
-export function MyTasksList({ tasks, onLongPress, onPress }: MyTasksListProps) {
+export function MyTasksList({ 
+  tasks, 
+  onLongPress,
+  onPress,
+  nightModeState,
+}: MyTasksListProps) {
   return (
-    <FlatList
-      data={tasks}
-      keyExtractor={item => String(item.id)}
-      renderItem={({ item, index }) => {
-        return (
-          <TouchableOpacity
-            testID={`button-${index}`}
-            activeOpacity={0.7}
-            onPress={() => onPress(item.id)}
-            onLongPress={() => onLongPress(item.id)}
-            style={ item.done ? styles.taskButtonDone : styles.taskButton}
-            >
-            <View 
-              testID={`marker-${index}`}
-              style={ item.done ? styles.taskMarkerDone : styles.taskMarker}
-              />
-            <Text 
-              style={ item.done ? styles.taskTextDone : styles.taskText}
-            >
-              {item.title}
-            </Text>
-          </TouchableOpacity>
-        )
-      }}
-      ListHeaderComponent={<FlatListHeaderComponent />}
-      ListHeaderComponentStyle={{
-        marginBottom: 20
-      }}
-      style={{
-        marginHorizontal: 24,
-        marginTop: 32
-      }}
-    />
+      <FlatList
+        data={tasks}
+        keyExtractor={item => String(item.id)}
+        renderItem={({ item, index }) => {
+          
+          return (
+            <TouchableOpacity
+              testID={`button-${index}`}
+              activeOpacity={0.7}
+              onPress={() => onPress(item.id)}
+              onLongPress={() => onLongPress(item.id)}
+              style={item.done ? styles.taskButtonDone : styles.taskButton}
+              >
+              <View 
+                testID={`marker-${index}`}
+                style={[item.done ? styles.taskMarkerDone : styles.taskMarker,
+                  {borderColor: nightModeState ? '#67E480': '#3D3D4D'},
+                  item.done ? {backgroundColor: nightModeState ? '#67E480' : '#273FAD'} :
+                  {backgroundColor: 'transparent' }]}
+                />
+              <Text 
+                style={[item.done ? {color:'#A09CB1',
+                textDecorationLine: 'line-through' }:
+                {color: nightModeState ? '#67E480': '#3D3D4D'}]}
+                >
+                {item.title}
+              </Text>
+            </TouchableOpacity>
+          )
+        }}
+        ListHeaderComponent={<FlatListHeaderComponent 
+          nightModeState={nightModeState} />}
+        ListHeaderComponentStyle={{
+          marginBottom: 20
+        }}
+        style={{
+          marginHorizontal: 24,
+          marginTop: 32
+        }}
+        />
   )
 }
 

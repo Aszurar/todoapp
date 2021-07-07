@@ -10,9 +10,14 @@ interface Task {
   done: boolean;
 }
 
-export function Home() {
-  const [tasks, setTasks] = useState<Task[]>([]);
+interface HomeProps {
+  setNightModeFunction: () => void,
+  nightModeState: boolean;
+}
 
+export function Home({setNightModeFunction, nightModeState}: HomeProps) {
+  const [tasks, setTasks] = useState<Task[]>([]);
+  
   function handleAddTask(newTaskTitle: string) {
     console.log(newTaskTitle);  
 
@@ -69,16 +74,23 @@ export function Home() {
     setTasks(updatedTasks);
   }
 
+
+
   return (
     <>
-      <Header />
+      <Header 
+        setNightModeFunction = {setNightModeFunction}
+        nightModeState = {nightModeState}/>
 
-      <TodoInput addTask={handleAddTask} />
+      <TodoInput addTask={handleAddTask}
+      nightModeState = {nightModeState}
+       />
 
       <MyTasksList 
         tasks={tasks} 
         onPress={handleMarkTaskAsDone} 
-        onLongPress={handleRemoveTask} 
+        onLongPress={handleRemoveTask}
+        nightModeState = {nightModeState}
       />
     </>
   )
