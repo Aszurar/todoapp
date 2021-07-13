@@ -1,5 +1,5 @@
 # todoapp | Ignite - React-Native
- O projeto **todoapp** é um aplicativo mobile que cadastra tarefas a serem feitas que podem ser marcadas e removidas.
+ O projeto **todoapp** é um aplicativo mobile que cadastra tarefas a serem feitas que podem ser marcadas e removidas, além disso o aplicativo também possui modo noturno.
 <h2 align="center">todoapp</h2>
 
 ___
@@ -23,6 +23,7 @@ ___
 ## :information_source: Sobre
 
 O projeto **todoapp** é o 1º desafio do bootcamp **Ignite da trilha React Native da Rocketseat** em que treinamos todos os conceitos básicos de React Native como **componentes e suas propriedades, variável Estado, formas de manipulações de variável Estado como filter, findIndex, map, estilização com StyleSheet, componentização e formas de passar dados/funções para componentes criados.**
+Esse projeto também consiste com um desafio adicional de ter feito um modo noturno para a aplicação(que já foi completo!).
 
 * Página Inicial:
   
@@ -42,6 +43,7 @@ ___
 
 
 Esse projeto tem por objetivo por em prática os conceitos básicos de React Native no desenvolvimento mobile ensinados no 1º capítulo do curso **Ignite** de **React Native**. 
+Além disso, o desafio principal é criar as funcionalidades da aplicação adicionar/remover tarefas, alterar a estilização quando marcado. No entanto, também foi completado o desafio extra de se criar um modo noturno para a aplicação.
 
 Pretendo adicionar algumas funcionalidades no futuro como:
 1. Pesquisa de transações.
@@ -58,7 +60,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 - [Typescript](https://www.typescriptlang.org/)
 - [React-Native](https://reactnative.dev/)
 - [Yarn](https://classic.yarnpkg.com/blog/2017/05/12/introducing-yarn/)
-
+- [React](https://pt-br.reactjs.org/)
 ___
 ## :package: Como baixar e executar o projeto
 
