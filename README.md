@@ -61,6 +61,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 - [React-Native](https://reactnative.dev/)
 - [Yarn](https://classic.yarnpkg.com/blog/2017/05/12/introducing-yarn/)
 - [React](https://pt-br.reactjs.org/)
+- [Android Studio](https://developer.android.com/studio)
 ___
 ## :package: Como baixar e executar o projeto
 
