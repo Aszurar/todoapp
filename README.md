@@ -30,16 +30,16 @@ Esse projeto também consiste com um desafio adicional de ter feito um modo notu
   <img src="https://i.imgur.com/s6XgGBf.png" width="800"> 
 
  
- * Cadastro:
+ * Tarefa adicionada:
   
     <img src="https://i.imgur.com/7fD2xT8.png" width="800">
 
 ___
 ## :interrobang: Motivo
 
- * Registros de tarefas:
+ *  Tarefas completas:
 
-    <img src="https://i.imgur.com/uP0bQnu.png" width="250">
+    <img src="https://i.imgur.com/fLrNEno.png" width="250">
 
 
 Esse projeto tem por objetivo por em prática os conceitos básicos de React Native no desenvolvimento mobile ensinados no 1º capítulo do curso **Ignite** de **React Native**. 
