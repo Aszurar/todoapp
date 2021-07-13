@@ -81,7 +81,7 @@ ___
     ```bash
       yarn
     ```
- - É necessário a instalação do emulador [Android Studios](https://developer.android.com/studio).
+ - É necessário a instalação do emulador [Android Studios](https://developer.android.com/studio) e das tecnologias requesitadas acima no ## :seedling: Requisitos Mínimos
  - Também é necessário a instalação/configuração de outras tecnologias, para isso siga os passos indicados nessa página de acordo com seu sistema operacional: [Executando uma Aplicação React-Native emulando Windows/Linux/MacOS ou direto no dispositivo mobile Android/IOS](https://react-native.rocketseat.dev/android/linux)
  - Execução - Abra a pasta do projeto com alguma IDE(Vscode) ou simplesmente abra o terminal na pasta do projeto e execute o comando abaixo:
     ```bash
