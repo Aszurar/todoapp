@@ -32,7 +32,7 @@ Esse projeto também consiste com um desafio adicional de ter feito um modo notu
  
  * Cadastro:
   
-    <img src="https://i.imgur.com/7fD2xT8.png" width="250">
+    <img src="https://i.imgur.com/7fD2xT8.png" width="800">
 
 ___
 ## :interrobang: Motivo
