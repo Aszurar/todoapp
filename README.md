@@ -14,9 +14,9 @@ ___
 
 ___
 
-<div align="center" ><img src="https://media.giphy.com/media/w9E0lhjsoUC0m7VggD/giphy.gif" width="500"></div>
+<div align="center" ><img src="https://media.giphy.com/media/z5pWl1aKFlFTlAl2Y4/giphy.gif" width="500"></div>
 
-- [**Link do vídeo completo sobre o projeto**](https://youtu.be/lbfgpBBoaP4)
+- [**Link do vídeo completo sobre o projeto**](https://youtu.be/lrkOKH8ycx8)
 
 ___
 
@@ -27,7 +27,7 @@ Esse projeto também consiste com um desafio adicional de ter feito um modo notu
 
 * Página Inicial:
   
-  <img src="https://i.imgur.com/ncJ0PHQ.png" width="250"> 
+  <img src="https://i.imgur.com/s6XgGBf.png" width="800"> 
 
  
  * Cadastro:
