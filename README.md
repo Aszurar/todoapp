@@ -50,7 +50,13 @@ Pretendo adicionar algumas funcionalidades no futuro como:
 ___
 ## :seedling: Requisitos Mínimos
 
-Node.js, Yarn(ou NPM), React, React-Native e Typescript.
+- Node.js 
+- Yarn(ou NPM)
+- React
+- React-Native
+- Typescript
+- Android Studio
+- Celular(Opc
 
 ___
 ## :rocket: Tecnologias Utilizadas 
