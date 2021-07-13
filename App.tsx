@@ -11,7 +11,6 @@ export default function App() {
   function handleActiveNightMode() {
     setNightMode(!nightMode)
   }
-
   return (
     <View style={{flex: 1, backgroundColor: nightMode ? '#191622' : '#fff'}}>
       <StatusBar 
