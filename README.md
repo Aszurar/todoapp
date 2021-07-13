@@ -56,18 +56,18 @@ ___
 - React-Native
 - Typescript
 - Android Studio
-- Celular(Opc
+- Celular(Opcional)
 
 ___
 ## :rocket: Tecnologias Utilizadas 
 
 O projeto foi desenvolvido utilizando as seguintes tecnologias
-
-- [Typescript](https://www.typescriptlang.org/)
-- [React-Native](https://reactnative.dev/)
+- [Android Studio](https://developer.android.com/studio)
+- [NodeJS](https://nodejs.org/en/)
 - [Yarn](https://classic.yarnpkg.com/blog/2017/05/12/introducing-yarn/)
 - [React](https://pt-br.reactjs.org/)
-- [Android Studio](https://developer.android.com/studio)
+- [React-Native](https://reactnative.dev/)
+- [Typescript](https://www.typescriptlang.org/)
 ___
 ## :package: Como baixar e executar o projeto
 
